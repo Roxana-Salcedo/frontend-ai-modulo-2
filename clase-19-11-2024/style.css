@@ -1,0 +1,69 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Tipografía */
+    line-height: 1.5; /*Controla la altura de cada
+    línea de texto para mejorar la legibilidad*/
+}
+
+header{
+    background-color: #0d6b22;
+    color: #f1f1f1;
+    text-align: center;
+    /* Text-align sólo funciona en elemento en bloque porque afecta al contenido dentro del bloque.
+    No funciona en elementos en línea porque estos ocupan solo el espacio necesario para su contenido. */
+}
+
+footer{
+    background-color: #0d6b22;
+}
+
+.menu{
+    list-style: none;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #99c9a5;
+    font-weight: bold;
+    
+}
+
+.enlace:hover{
+    color: #ffdc23;
+    text-decoration: underline;
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: #412e5a ;
+}
+
+.boton-contacto{
+    background-color: #c0c042;
+    color: #030000;
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-weight: semibold;
+    border-radius: .5rem;
+}
+
+.boton-contacto:hover{
+    background-color: #efc137;
+}
+
+.boton-contacto:active{
+    background-color: #256e31;
+    color: #000;
+}
+
+.contacto div{
+    text-align:center;
+    font-family: Georgia; 
+}
+
+#titulo-principal{
+    text-decoration: underline;
+    /* Utilizar los selectores de id con mucho cuidado.
+    Los id tienen una mayor especificidad en css, lo que puede causar problemas.
+     */
+}
