@@ -8,3 +8,20 @@ body{
     line-height: 1.8;
 
 }
+header{
+    text-align: center;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 20px;
+}
+section{
+    /* Los valores para la propiedad border son tres separados cada uno por un espacio:
+    el primero es el grosor del borde
+    el segundo es el tipo de estilo del borde
+    el tercero es el color */
+    border: 3px solid var(--color-bordes); 
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+}
