@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="tema-claro">
     <header>
         <h1>Practica de Flexbox</h1>
-        <nav>
+        <nav aria-label="Mapa de navegación de la página">
             <ul>
                 <li><a class="nav-link" href="#">Incio</a></li>
                 <li><a class="nav-link" href="#tarjetas">Tarjetas</a></li>
@@ -21,10 +21,49 @@
         </nav>
     </header>
     <main>
+        <section class="seccion-tarjetas">
+            <h2 id="tarjetas">Ejemplo de tarjetas con Flexbox</h2>
+            <p>Interacción con Flexbox: observa cómo diferentes propiedades afectann el diseño de cada tarjeta.</p>
+            <div class="contenedor-tarjetas">
+                <article class="card">
+                    <h3>Tarjeta 1</h3>
+                    <p>Esta tarjeta usa <code>align-self: flex-end</code> para moverse hacia abajo.</p>
+                </article>
 
+                <article class="card especial">
+                    <h3>Tarjeta 2</h3>
+                    <p>Esta tarjeta utilizar <code>flex-grow: 2</code> para ocupar más espacio proporcionalmente.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Tarjeta 3</h3>
+                    <p>Usa <code>order: -1</code> para aparecer antes en el flujo visual.</p>
+                </article>
+
+                <article class="card carta-hover">
+                    <h3>Tarjeta 4</h3>
+                    <p>Pasa el cursor sobre esta tarjeta para ver una animación divertida.</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2 id="formulario">Ejemplo de formulario con Flexbox</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text">
+
+                <label for="correo">Correo:</label>
+                <input type="email">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
-
+        <p>&copy; 2024. Práctica de Flexbox.</p>
     </footer>
     <script src="script.js"></script>
 </body>
