@@ -1,3 +1,12 @@
+:root{
+    --color-primario : #5683cc;
+    --color-background:  #c1aa63;
+    --color-acentos: #e3f2fd;
+    --color-bordes:#a7a7a7;
+    --color-texto: #333;
+    --color-secundario: #fff;
+}
+/* Reset básico */
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -5,8 +14,8 @@ body{
     background-color: var(--color-background);
     color: var(--color-texto);
     line-height: 1.8;
-
 }
+
 header{
     text-align: center;
     background-color: var(--color-primario);
@@ -20,4 +29,52 @@ section{
     border-radius: 15px;
     padding: 15px;
     margin: 20px;
+}
+
+h2{
+    color: var(--color-primario)
+}
+
+.box{
+    background-color: var(--color-acentos);
+    border: 1px solid var(--color-primario);
+    margin: 10px auto;
+    /* El valor auto en la propiedad de margin hace que el navegador calcule
+    automáticamente el espacio necesario para centrar un elemento dentro de su contendedor padre,
+    siempre que el elemento tenga un ancho definido. Esta manera de centar los elementos sólo aplica de manera
+    horizontal.*/
+    padding: 10px;
+    text-align: center;
+}
+
+.block{
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+
+.inline{
+    display: inline;
+    width: 150px;
+    height: 30px;
+    /* width y height son ignorados porque los elementos inline no respetan esta propiedad. */
+}
+
+
+.content-box{
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid var(--color-primario);
+    background-color: var(--color-acentos);
+    width: 200px;
+}
+
+.border-box{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid var(--color-primario);
+    background-color: var(--color-acentos);
+    width: 200px;
 }
