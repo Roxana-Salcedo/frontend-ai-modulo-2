@@ -6,3 +6,11 @@ body{
     color: var();
     background-color: var(--color-background);
 }
+header, main, footer{
+    margin: 0;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+}
